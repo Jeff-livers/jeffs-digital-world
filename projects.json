@@ -5,12 +5,17 @@
     "url": "https://jefflivers.com"
   },
   {
-    "title": "what-im-listening-to.pages.dev",
-    "description": "What Music I'm listening to",
+    "title": "What Music I'm Listening t0",
+    "description": "get a taste for the songs i've been into",
     "url": "https://what-im-listening-to.pages.dev/"
   },
   {
-    "title": "myhalfbakedideas.com",
+    "title": "Free Plants Marketplace",
+    "description": "A site to give away my beloved plants",
+    "url": "https://free-plants.pages.dev/"
+  },
+  {
+    "title": "My Half Baked Ideas",
     "description": "A place to share my thoughts and ideas",
     "url": "https://myhalfbakedideas.com/"
   },
