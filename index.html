@@ -118,9 +118,12 @@
         projects.forEach(project => {
           const a = document.createElement('a');
           a.className = 'project-link';
+          const external = !project.url.startsWith('/');
           a.href = project.url;
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
+          if (external) {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
           a.innerHTML = `
             <div class="project-info">
               <span class="project-title">${project.title}</span>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeff's Videos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FFFEFC;
+      color: #000000;
+      font-family: 'Roboto Mono', monospace;
+      min-height: 100vh;
+      padding: 48px 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #000000;
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-bottom: 40px;
+      opacity: 0.5;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 48px;
+      text-align: center;
+      color: #555555;
+    }
+
+    /* ── VIDEO GRID ── rendered from videos.json ── */
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .video-card {
+      background: #F3F3F4;
+      border-radius: 20px;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .video-card:hover {
+      background: #001F69;
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-info {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .video-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .video-description {
+      font-size: 0.75rem;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 540px) {
+      .videos {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 32px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <a class="back-link" href="/">← back</a>
+
+    <h1>My Videos</h1>
+    <p class="subtitle">Videos I made</p>
+
+    <div class="videos" id="videos"></div>
+
+  </div>
+
+  <script>
+    fetch('videos.json')
+      .then(res => res.json())
+      .then(videos => {
+        const container = document.getElementById('videos');
+        videos.forEach(video => {
+          const a = document.createElement('a');
+          a.className = 'video-card';
+          a.href = `https://youtube.com/watch?v=${video.videoId}`;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.innerHTML = `
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg" alt="${video.title}">
+            <div class="video-info">
+              <div class="video-title">${video.title}</div>
+              <div class="video-description">${video.description}</div>
+            </div>
+          `;
+          container.appendChild(a);
+        });
+      });
+  </script>
+
+</body>
+</html>

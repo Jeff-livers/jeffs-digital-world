@@ -5,6 +5,11 @@
     "url": "https://jefflivers.com"
   },
   {
+    "title": "My Videos",
+    "description": "Fun videos I've filmed",
+    "url": "/videos"
+  },
+  {
     "title": "What Music I'm Listening to",
     "description": "get a taste for the songs i've been into",
     "url": "https://what-im-listening-to.pages.dev/"
@@ -24,4 +29,5 @@
     "description": "A little lonesome cowboy vibes",
     "url": "https://lovesick-blues.pages.dev/"
   }
+  
 ]
