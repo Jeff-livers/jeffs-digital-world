@@ -19,6 +19,11 @@
     "description": "A site to give away my beloved plants",
     "url": "https://free-plants.pages.dev/"
   },
+   {
+    "title": "Salida Slackline Club",
+    "description": "Website for the Salida Slackline Club",
+    "url": "https://slackline-club-website.pages.dev/"
+  },
   {
     "title": "My Half Baked Ideas",
     "description": "A place to share my thoughts and ideas",
@@ -29,5 +34,6 @@
     "description": "A little lonesome cowboy vibes",
     "url": "https://lovesick-blues.pages.dev/"
   }
+  
   
 ]
