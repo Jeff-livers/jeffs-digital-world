@@ -33,7 +33,15 @@
     "title": "Lovesick Blues",
     "description": "A little lonesome cowboy vibes",
     "url": "https://lovesick-blues.pages.dev/"
+  },
+  {
+    "title": "Friends' Corner",
+    "description": "Check out my friends' corners of the internet",
+    "url": "/friends"
+  },
+  {
+    "title": "Website Art",
+    "description": "little corners of the web I made",
+    "url": "/art"
   }
-  
-  
 ]
