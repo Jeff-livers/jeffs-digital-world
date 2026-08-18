@@ -133,7 +133,7 @@
       .then(res => res.json())
       .then(videos => {
         const container = document.getElementById('videos');
-        videos.forEach(video => {
+        videos.slice().reverse().forEach(video => {
           const a = document.createElement('a');
           a.className = 'video-card';
           a.href = `https://youtube.com/watch?v=${video.videoId}`;

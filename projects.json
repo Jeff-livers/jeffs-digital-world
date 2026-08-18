@@ -10,6 +10,11 @@
     "url": "/videos"
   },
   {
+    "title": "Salida Slackline Club",
+    "description": "Website for the Salida Slackline Club",
+    "url": "https://salidaslacklineclub.com/"
+  },
+  {
     "title": "What Music I'm Listening to",
     "description": "get a taste for the songs i've been into",
     "url": "https://what-im-listening-to.pages.dev/"
@@ -18,11 +23,6 @@
     "title": "Free Plants Marketplace",
     "description": "A site to give away my beloved plants",
     "url": "https://free-plants.pages.dev/"
-  },
-   {
-    "title": "Salida Slackline Club",
-    "description": "Website for the Salida Slackline Club",
-    "url": "https://salidaslacklineclub.com/"
   },
   {
     "title": "My Half Baked Ideas",
