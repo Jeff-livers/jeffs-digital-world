@@ -1,13 +1,8 @@
 [
   {
-    "title": "Lovesick Blues",
-    "url": "https://lovesick-blues.pages.dev/",
-    "description": "A little lonesonme cowboy blues - Art by Brett Alan Johnson - Music by Hank Williams"
-  },
-  {
-    "title": "Si Tu Vois Ma Mère",
-    "url": "https://si-tu-vois-ma-mere.pages.dev/",
-    "description": "Art by Clifford Harper - Music by Sidney Bechet and Claude Luter"
+    "title": "Nicholas Party",
+    "url": "https://nicholas-party.pages.dev/",
+    "description": "Art By Nicholas Party"
   },
   {
     "title": "Jean Henry",
@@ -15,9 +10,14 @@
     "description": "Art by Henry Heerup and Jean Debuffet"
   },
   {
-    "title": "Nicholas Party",
-    "url": "https://nicholas-party.pages.dev/",
-    "description": "Art By Nicholas Party"
+    "title": "Si Tu Vois Ma Mère",
+    "url": "https://si-tu-vois-ma-mere.pages.dev/",
+    "description": "Art by Clifford Harper - Music by Sidney Bechet and Claude Luter"
+  },
+  {
+    "title": "Lovesick Blues",
+    "url": "https://lovesick-blues.pages.dev/",
+    "description": "A little lonesonme cowboy blues - Art by Brett Alan Johnson - Music by Hank Williams"
   },
   {
     "title": "The Leaves Are Changing and So Are We",

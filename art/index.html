@@ -134,7 +134,7 @@
       .then(res => res.json())
       .then(sites => {
         const container = document.getElementById('art');
-        sites.forEach(site => {
+        sites.reverse().forEach(site => {
           const a = document.createElement('a');
           a.className = 'art-card';
           a.href = site.url;
